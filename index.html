@@ -9,9 +9,16 @@
   <link rel="stylesheet" href="https://www.humanbiomedia.org/wp-content/uploads/siteground-optimizer-assets/siteground-optimizer-combined-css-8a536c831bda3ae1e8b9f5cde9c9f457.css">
 
   <style>
-    body { font-family: system-ui, sans-serif; line-height: 1.6; }
+    body { font-family: system-ui, sans-serif; line-height: 1.6; background: #fafafa; }
     .container { max-width: 1000px; margin: 0 auto; padding: 1.5rem; }
     nav a { margin-right: 1rem; }
+    .card {
+      background: white;
+      padding: 1.5rem;
+      border-radius: 12px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+      margin-bottom: 2rem;
+    }
   </style>
 </head>
 <body>
@@ -28,7 +35,8 @@
 </header>
 
 <main class="container">
-  <section>
+
+  <section class="card">
     <h2>Présentation</h2>
     <p>
       Cette série de pages propose une version française des activités d’analyse d’urine
@@ -36,7 +44,7 @@
     </p>
   </section>
 
-  <section>
+  <section class="card">
     <h2>Parcours suggéré</h2>
     <ol>
       <li>Examen chimique – bandelette urinaire</li>
@@ -46,7 +54,7 @@
     </ol>
   </section>
 
-  <section>
+  <section class="card">
     <h2>Objectifs pédagogiques</h2>
     <ul>
       <li>Décrire les composantes d’une analyse d’urine complète.</li>
@@ -55,15 +63,19 @@
       <li>Formuler des hypothèses diagnostiques à partir d’un cas clinique.</li>
     </ul>
   </section>
+
 </main>
 
 <footer class="container">
   <p>Basé sur les ressources de HumanBioMedia – Attribution : « Access it for free at https://humanbiomedia.org ».</p>
 </footer>
 
+<!-- Global JS (must load before Hype scripts) -->
 <script src="https://www.humanbiomedia.org/wp-includes/js/jquery/jquery.min.js"></script>
 <script src="https://www.humanbiomedia.org/wp-content/uploads/siteground-optimizer-assets/siteground-optimizer-combined-js-0107d53d962e4cd481d3dd44e43df5c7.js"></script>
 <script src="https://www.humanbiomedia.org/wp-content/plugins/sg-cachepress/assets/js/lazysizes.min.js"></script>
+
+<!-- No Hype scripts on this page -->
 
 </body>
 </html>
