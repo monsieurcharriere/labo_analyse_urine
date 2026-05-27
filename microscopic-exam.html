@@ -10,9 +10,22 @@
   <link rel="stylesheet" href="https://www.humanbiomedia.org/wp-content/uploads/siteground-optimizer-assets/siteground-optimizer-combined-css-8a536c831bda3ae1e8b9f5cde9c9f457.css">
 
   <style>
-    body { font-family: system-ui, sans-serif; line-height: 1.6; background: #fafafa; }
-    .container { max-width: 1000px; margin: 0 auto; padding: 1.5rem; }
-    nav a { margin-right: 1rem; }
+    body {
+      font-family: system-ui, sans-serif;
+      line-height: 1.6;
+      background: #fafafa;
+    }
+
+    .container {
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 1.5rem;
+    }
+
+    nav a {
+      margin-right: 1rem;
+    }
+
     .card {
       background: white;
       padding: 1.5rem;
@@ -20,9 +33,20 @@
       box-shadow: 0 2px 10px rgba(0,0,0,0.08);
       margin-bottom: 2rem;
     }
-    #urinemicroscopicexam_hype_container { margin-top: 2rem; }
+
+    /* ⭐ FIX: Constrain the Hype animation */
+    #urinemicroscopicexam_hype_container {
+      width: 100%;
+      height: 650px;        /* Adjust if needed */
+      position: relative;   /* REQUIRED */
+      overflow: hidden;     /* REQUIRED */
+      border-radius: 12px;
+      background: #fff;
+      margin-top: 1.5rem;
+    }
   </style>
 </head>
+
 <body>
 
 <header class="container">
@@ -38,8 +62,9 @@
 
 <main class="container">
 
+  <!-- INTRO -->
   <section class="card">
-    <h2>Contexte</h2>
+    <h2>Introduction</h2>
     <p>
       L’examen microscopique porte sur le sédiment urinaire. Après centrifugation,
       une petite quantité de sédiment est déposée sur une lame et observée au
@@ -48,6 +73,7 @@
     </p>
   </section>
 
+  <!-- SIMULATION -->
   <section class="card">
     <h2>Simulation microscopique</h2>
     <p>
@@ -58,6 +84,7 @@
     <div id="urinemicroscopicexam_hype_container" class="HYPE_document"></div>
   </section>
 
+  <!-- COMMON FINDINGS -->
   <section class="card">
     <h2>Éléments fréquemment observés</h2>
     <ul>
@@ -83,7 +110,7 @@
 <script src="https://www.humanbiomedia.org/wp-content/uploads/siteground-optimizer-assets/siteground-optimizer-combined-js-0107d53d962e4cd481d3dd44e43df5c7.js"></script>
 <script src="https://www.humanbiomedia.org/wp-content/plugins/sg-cachepress/assets/js/lazysizes.min.js"></script>
 
-<!-- Microscopic exam Hype runtime + script -->
+<!-- ⭐ HYPE SCRIPTS MUST BE LAST -->
 <script src="https://www.humanbiomedia.org/wp-content/uploads/hypeanimations/36/urine-microscopic-exam.hyperesources/HYPE-740.full.min.js"></script>
 <script src="https://www.humanbiomedia.org/wp-content/uploads/hypeanimations/36/urine-microscopic-exam.hyperesources/urinemicroscopicexam_hype_generated_script.js?77323"></script>
 
