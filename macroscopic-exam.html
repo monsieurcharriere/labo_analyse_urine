@@ -40,9 +40,9 @@
     #urineodorresults_hype_container,
     #24hrurinevolume_hype_container {
       width: 100%;
-      height: 650px;        /* Adjust if needed */
-      position: relative;   /* REQUIRED */
-      overflow: hidden;     /* REQUIRED */
+      height: 650px;
+      position: relative;
+      overflow: hidden;
       border-radius: 12px;
       background: #fff;
       margin-top: 1.5rem;
@@ -65,7 +65,6 @@
 
 <main class="container">
 
-  <!-- INTRO -->
   <section class="card">
     <h2>Introduction</h2>
     <p>
@@ -76,47 +75,39 @@
     </p>
   </section>
 
-  <!-- COLOR -->
   <section class="card">
     <h2>Couleur de l’urine</h2>
     <p>
       La couleur de l’urine varie selon l’hydratation, l’alimentation, les médicaments et
       certaines pathologies. Explorez les différentes teintes ci‑dessous.
     </p>
-
     <div id="urinecolorresults_hype_container" class="HYPE_document"></div>
   </section>
 
-  <!-- CLARITY -->
   <section class="card">
     <h2>Clarté de l’urine</h2>
     <p>
       Une urine trouble peut indiquer la présence de leucocytes, de bactéries, de cristaux
       ou de mucus. Une urine limpide est généralement normale.
     </p>
-
     <div id="urineclarityresults_hype_container" class="HYPE_document"></div>
   </section>
 
-  <!-- ODOR -->
   <section class="card">
     <h2>Odeur de l’urine</h2>
     <p>
       Certaines odeurs peuvent être évocatrices : sucrée (diabète), fétide (infection),
       ammoniacale (stagnation), etc.
     </p>
-
     <div id="urineodorresults_hype_container" class="HYPE_document"></div>
   </section>
 
-  <!-- 24-HOUR VOLUME -->
   <section class="card">
     <h2>Volume urinaire sur 24 heures</h2>
     <p>
       Le volume urinaire quotidien reflète l’hydratation, la fonction rénale et certains
       déséquilibres hormonaux. Explorez les volumes typiques et anormaux ci‑dessous.
     </p>
-
     <div id="24hrurinevolume_hype_container" class="HYPE_document"></div>
   </section>
 
@@ -134,18 +125,48 @@
 <script src="https://www.humanbiomedia.org/wp-content/uploads/siteground-optimizer-assets/siteground-optimizer-combined-js-0107d53d962e4cd481d3dd44e43df5c7.js"></script>
 <script src="https://www.humanbiomedia.org/wp-content/plugins/sg-cachepress/assets/js/lazysizes.min.js"></script>
 
-<!-- ⭐ HYPE SCRIPTS MUST BE LAST -->
-<script src="https://www.humanbiomedia.org/wp-content/uploads/hypeanimations/40/urine-color-results.hyperesources/HYPE-740.thin.min.js"></script>
-<script src="https://www.humanbiomedia.org/wp-content/uploads/hypeanimations/40/urine-color-results.hyperesources/urinecolorresults_hype_generated_script.js?30784"></script>
+<!-- ⭐ DOMContentLoaded FIX FOR ALL FOUR SIMULATIONS -->
+<script>
+document.addEventListener("DOMContentLoaded", function() {
 
-<script src="https://www.humanbiomedia.org/wp-content/uploads/hypeanimations/50/urine-clarity-results.hyperesources/HYPE-740.thin.min.js"></script>
-<script src="https://www.humanbiomedia.org/wp-content/uploads/hypeanimations/50/urine-clarity-results.hyperesources/urineclarityresults_hype_generated_script.js?5014"></script>
+  // COLOR
+  var c1 = document.createElement("script");
+  c1.src = "https://www.humanbiomedia.org/wp-content/uploads/hypeanimations/40/urine-color-results.hyperesources/HYPE-740.thin.min.js";
+  document.body.appendChild(c1);
 
-<script src="https://www.humanbiomedia.org/wp-content/uploads/hypeanimations/41/urine-odor-results.hyperesources/HYPE-740.thin.min.js"></script>
-<script src="https://www.humanbiomedia.org/wp-content/uploads/hypeanimations/41/urine-odor-results.hyperesources/urineodorresults_hype_generated_script.js?79004"></script>
+  var c2 = document.createElement("script");
+  c2.src = "https://www.humanbiomedia.org/wp-content/uploads/hypeanimations/40/urine-color-results.hyperesources/urinecolorresults_hype_generated_script.js?30784";
+  document.body.appendChild(c2);
 
-<script src="https://www.humanbiomedia.org/wp-content/uploads/hypeanimations/61/24hr-urine-volume.hyperesources/HYPE-740.thin.min.js"></script>
-<script src="https://www.humanbiomedia.org/wp-content/uploads/hypeanimations/61/24hr-urine-volume.hyperesources/24hrurinevolume_hype_generated_script.js?61014"></script>
+  // CLARITY
+  var cl1 = document.createElement("script");
+  cl1.src = "https://www.humanbiomedia.org/wp-content/uploads/hypeanimations/50/urine-clarity-results.hyperesources/HYPE-740.thin.min.js";
+  document.body.appendChild(cl1);
+
+  var cl2 = document.createElement("script");
+  cl2.src = "https://www.humanbiomedia.org/wp-content/uploads/hypeanimations/50/urine-clarity-results.hyperesources/urineclarityresults_hype_generated_script.js?5014";
+  document.body.appendChild(cl2);
+
+  // ODOR
+  var o1 = document.createElement("script");
+  o1.src = "https://www.humanbiomedia.org/wp-content/uploads/hypeanimations/41/urine-odor-results.hyperesources/HYPE-740.thin.min.js";
+  document.body.appendChild(o1);
+
+  var o2 = document.createElement("script");
+  o2.src = "https://www.humanbiomedia.org/wp-content/uploads/hypeanimations/41/urine-odor-results.hyperesources/urineodorresults_hype_generated_script.js?79004";
+  document.body.appendChild(o2);
+
+  // 24-HOUR VOLUME
+  var v1 = document.createElement("script");
+  v1.src = "https://www.humanbiomedia.org/wp-content/uploads/hypeanimations/61/24hr-urine-volume.hyperesources/HYPE-740.thin.min.js";
+  document.body.appendChild(v1);
+
+  var v2 = document.createElement("script");
+  v2.src = "https://www.humanbiomedia.org/wp-content/uploads/hypeanimations/61/24hr-urine-volume.hyperesources/24hrurinevolume_hype_generated_script.js?61014";
+  document.body.appendChild(v2);
+
+});
+</script>
 
 </body>
 </html>
