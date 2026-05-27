@@ -5,13 +5,21 @@
   <title>Examen chimique – Bandelette urinaire</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+  <!-- Global CSS -->
   <link rel="stylesheet" href="https://www.humanbiomedia.org/wp-content/themes/humanbiomedia/style.css">
   <link rel="stylesheet" href="https://www.humanbiomedia.org/wp-content/uploads/siteground-optimizer-assets/siteground-optimizer-combined-css-8a536c831bda3ae1e8b9f5cde9c9f457.css">
 
   <style>
-    body { font-family: system-ui, sans-serif; line-height: 1.6; }
+    body { font-family: system-ui, sans-serif; line-height: 1.6; background: #fafafa; }
     .container { max-width: 1000px; margin: 0 auto; padding: 1.5rem; }
     nav a { margin-right: 1rem; }
+    .card {
+      background: white;
+      padding: 1.5rem;
+      border-radius: 12px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+      margin-bottom: 2rem;
+    }
     #urinechemicalexamresults_hype_container { margin-top: 2rem; }
   </style>
 </head>
@@ -30,29 +38,100 @@
 
 <main class="container">
 
-  <section>
-    <h2>Contexte</h2>
+  <!-- INTRO -->
+  <section class="card">
+    <h2>Introduction</h2>
     <p>
-      L’examen chimique repose sur une bandelette réactive permettant de détecter
-      rapidement des anomalies urinaires.
+      L’examen chimique de l’urine repose sur l’utilisation d’une bandelette réactive
+      comportant plusieurs zones imprégnées de réactifs. Après immersion dans l’urine,
+      ces zones changent de couleur selon la présence ou l’absence de certains
+      constituants. Cet examen est rapide, peu coûteux et constitue un outil essentiel
+      pour dépister de nombreuses anomalies urinaires.
     </p>
   </section>
 
-  <section>
+  <!-- LEARNING OBJECTIVES -->
+  <section class="card">
+    <h2>Objectifs d’apprentissage</h2>
+    <ul>
+      <li>Identifier les paramètres mesurés par une bandelette urinaire.</li>
+      <li>Comprendre la signification clinique des résultats anormaux.</li>
+      <li>Interpréter les résultats dans un contexte clinique.</li>
+      <li>Reconnaître les limites et sources d’erreur de la bandelette.</li>
+    </ul>
+  </section>
+
+  <!-- HOW IT WORKS -->
+  <section class="card">
+    <h2>Comment fonctionne la bandelette urinaire ?</h2>
+    <p>
+      Chaque pastille de la bandelette contient un réactif chimique qui réagit avec un
+      constituant spécifique de l’urine. Après immersion pendant 1 à 2 secondes, la
+      bandelette est retirée et essuyée délicatement. Les couleurs sont comparées au
+      tableau de référence après un délai précis (30 à 120 secondes selon le paramètre).
+    </p>
+    <p>
+      Une lecture incorrecte du temps, une urine trop concentrée ou trop diluée, ou une
+      contamination peuvent fausser les résultats.
+    </p>
+  </section>
+
+  <!-- SIMULATION -->
+  <section class="card">
     <h2>Simulation interactive</h2>
+    <p>
+      Utilisez la simulation ci‑dessous pour explorer les différents paramètres de la
+      bandelette urinaire. Observez les changements de couleur et interprétez les
+      résultats en fonction du cas clinique.
+    </p>
+
     <div id="urinechemicalexamresults_hype_container" class="HYPE_document"></div>
+  </section>
+
+  <!-- PARAMETER INTERPRETATION -->
+  <section class="card">
+    <h2>Interprétation des paramètres</h2>
+
+    <ul>
+      <li><strong>Leucocytes :</strong> un résultat positif suggère une infection ou une inflammation.</li>
+      <li><strong>Nitrites :</strong> un résultat positif indique souvent une infection bactérienne (bactéries nitrifiantes).</li>
+      <li><strong>Protéines :</strong> la protéinurie peut refléter une atteinte glomérulaire ou une surcharge.</li>
+      <li><strong>Glucose :</strong> la glycosurie est typique d’un diabète mal contrôlé.</li>
+      <li><strong>Cétones :</strong> présentes lors de jeûne prolongé, vomissements, dénutrition ou diabète déséquilibré.</li>
+      <li><strong>Bilirubine :</strong> peut indiquer une atteinte hépatique ou biliaire.</li>
+      <li><strong>Urobilinogène :</strong> augmenté en cas d’hémolyse ou d’atteinte hépatique.</li>
+      <li><strong>Sang :</strong> hématurie, hémoglobinurie ou myoglobinurie.</li>
+      <li><strong>pH :</strong> varie selon l’alimentation, les infections et les troubles métaboliques.</li>
+      <li><strong>Densité :</strong> reflète l’hydratation et la capacité de concentration rénale.</li>
+    </ul>
+  </section>
+
+  <!-- LIMITATIONS -->
+  <section class="card">
+    <h2>Limites de la bandelette urinaire</h2>
+    <ul>
+      <li>Certains médicaments peuvent fausser les couleurs.</li>
+      <li>Une urine très concentrée peut donner de faux positifs.</li>
+      <li>Une lecture trop tardive peut modifier les résultats.</li>
+      <li>La bandelette ne remplace pas l’examen microscopique.</li>
+    </ul>
   </section>
 
 </main>
 
 <footer class="container">
-  <p>Basé sur les ressources de HumanBioMedia – Attribution : « Access it for free at https://humanbiomedia.org ».</p>
+  <p>
+    Basé sur les ressources de HumanBioMedia – Attribution :
+    « Access it for free at https://humanbiomedia.org ».
+  </p>
 </footer>
 
+<!-- Global JS -->
 <script src="https://www.humanbiomedia.org/wp-includes/js/jquery/jquery.min.js"></script>
 <script src="https://www.humanbiomedia.org/wp-content/uploads/siteground-optimizer-assets/siteground-optimizer-combined-js-0107d53d962e4cd481d3dd44e43df5c7.js"></script>
 <script src="https://www.humanbiomedia.org/wp-content/plugins/sg-cachepress/assets/js/lazysizes.min.js"></script>
 
+<!-- Simulation JS -->
 <script src="https://www.humanbiomedia.org/wp-content/uploads/hypeanimations/44/urine-chemical-exam-results.hyperesources/HYPE-740.thin.min.js"></script>
 <script src="https://www.humanbiomedia.org/wp-content/uploads/hypeanimations/44/urine-chemical-exam-results.hyperesources/urinechemicalexamresults_hype_generated_script.js?48744"></script>
 
