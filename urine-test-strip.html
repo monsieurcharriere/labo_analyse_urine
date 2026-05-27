@@ -4,15 +4,23 @@
   <meta charset="UTF-8">
   <title>Examen chimique – Bandelette urinaire</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Direct link to their main theme CSS (layout + basic styles) -->
   <link rel="stylesheet" href="https://www.humanbiomedia.org/wp-content/themes/humanbiomedia/style.css">
+
   <style>
     body { font-family: system-ui, sans-serif; line-height: 1.6; }
     .container { max-width: 1000px; margin: 0 auto; padding: 1.5rem; }
     nav a { margin-right: 1rem; }
-    iframe { width: 100%; border: none; min-height: 900px; }
+    #urinechemicalexamresults_hype_container {
+      margin-top: 2rem;
+      /* Optional: center the simulation */
+      max-width: 100%;
+    }
   </style>
 </head>
 <body>
+
   <header class="container">
     <h1>Examen chimique – Bandelette urinaire</h1>
     <nav>
@@ -28,26 +36,45 @@
     <section>
       <h2>Contexte</h2>
       <p>
-        L’examen chimique de l’urine permet de mesurer le pH et plusieurs composés
-        cliniquement significatifs à l’aide d’une bandelette réactive. Les pastilles
-        de la bandelette changent de couleur après immersion dans l’urine, puis sont
-        comparées à un tableau de couleurs diagnostiques.
+        L’analyse d’urine comprend un examen chimique, macroscopique et microscopique.
+        L’examen chimique utilise une bandelette réactive portant plusieurs pastilles
+        imprégnées de réactifs. Après immersion dans l’urine, ces pastilles changent
+        de couleur en fonction de la présence de leucocytes, nitrites, protéines,
+        glucose, cétones, bilirubine, urobilinogène, sang et du pH.
+      </p>
+      <p>
+        En comparant les couleurs de la bandelette à un tableau de référence, on peut
+        détecter des anomalies suggérant, par exemple, une infection urinaire, un
+        diabète sucré ou une atteinte hépatique ou rénale.
       </p>
     </section>
 
     <section>
       <h2>Simulation interactive</h2>
       <p>
-        La simulation ci‑dessous provient du site original HumanBioMedia. Vous pouvez
-        l’utiliser pour pratiquer la lecture d’une bandelette urinaire.
+        La simulation ci‑dessous reproduit l’examen chimique d’une bandelette urinaire.
+        Utilisez‑la pour pratiquer la lecture des résultats et l’interprétation clinique.
       </p>
 
-      <!-- SLOT POUR LA SIMULATION EXACTE
-           Option 1 (recommandée pour garder tout intact) : iframe -->
-      <iframe src="https://www.humanbiomedia.org/urine-test-strip-simulation/"></iframe>
+      <!-- Hype container: id guessed from the script name (standard Hype convention) -->
+      <div id="urinechemicalexamresults_hype_container" class="HYPE_document"></div>
 
-      <!-- Option 2 (si tu copies manuellement leur HTML+JS) :
-           tu colleras ici le <div id="app">…</div> + <script src="…"> -->
+      <noscript>
+        <p>La simulation nécessite JavaScript pour fonctionner.</p>
+      </noscript>
+    </section>
+
+    <section>
+      <h2>Interprétation des principaux paramètres</h2>
+      <ul>
+        <li><strong>Leucocytes :</strong> un taux élevé suggère une infection urinaire.</li>
+        <li><strong>Nitrites :</strong> un résultat positif indique souvent une infection bactérienne.</li>
+        <li><strong>Protéines :</strong> la protéinurie peut refléter une atteinte rénale.</li>
+        <li><strong>Glucose :</strong> la glycosurie est typique d’un diabète mal contrôlé.</li>
+        <li><strong>Cétones :</strong> la cétonurie peut accompagner un diabète ou un jeûne prolongé.</li>
+        <li><strong>Bilirubine / urobilinogène :</strong> anomalies possibles du foie ou des voies biliaires.</li>
+        <li><strong>pH et densité :</strong> renseignent sur l’hydratation et le risque de calculs.</li>
+      </ul>
     </section>
   </main>
 
@@ -57,5 +84,20 @@
       « Access it for free at https://humanbiomedia.org ».
     </p>
   </footer>
+
+  <!-- JS dependencies (direct asset links) -->
+
+  <!-- jQuery (if needed by their theme or scripts) -->
+  <script src="https://www.humanbiomedia.org/wp-includes/js/jquery/jquery.min.js"></script>
+
+  <!-- Hype runtime (core engine) -->
+  <script src="https://www.humanbiomedia.org/wp-content/uploads/hypeanimations/44/urine-chemical-exam-results.hyperesources/HYPE-740.thin.min.js"></script>
+
+  <!-- Hype-generated simulation script (logic + assets) -->
+  <script src="https://www.humanbiomedia.org/wp-content/uploads/hypeanimations/44/urine-chemical-exam-results.hyperesources/urinechemicalexamresults_hype_generated_script.js?48744"></script>
+
+  <!-- Optional: lazy loading script they use -->
+  <script src="https://www.humanbiomedia.org/wp-content/plugins/sg-cachepress/assets/js/lazysizes.min.js"></script>
+
 </body>
 </html>
