@@ -10,21 +10,22 @@
   <link rel="stylesheet" href="https://www.humanbiomedia.org/wp-content/uploads/siteground-optimizer-assets/siteground-optimizer-combined-css-8a536c831bda3ae1e8b9f5cde9c9f457.css">
 
   <style>
-    #urinechemicalexamresults_hype_container {
-  width: 100%;
-  max-width: 100%;
-  height: 650px;      /* REQUIRED */
-  position: relative; /* REQUIRED */
-  overflow: hidden;
-  border-radius: 12px;
-  margin: 2rem 0;
-  background: #fff;   /* optional but clean */
-}
+    body {
+      font-family: system-ui, sans-serif;
+      line-height: 1.6;
+      background: #fafafa;
+    }
 
+    .container {
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 1.5rem;
+    }
 
-    body { font-family: system-ui, sans-serif; line-height: 1.6; background: #fafafa; }
-    .container { max-width: 1000px; margin: 0 auto; padding: 1.5rem; }
-    nav a { margin-right: 1rem; }
+    nav a {
+      margin-right: 1rem;
+    }
+
     .card {
       background: white;
       padding: 1.5rem;
@@ -32,9 +33,20 @@
       box-shadow: 0 2px 10px rgba(0,0,0,0.08);
       margin-bottom: 2rem;
     }
-    #urinechemicalexamresults_hype_container { margin-top: 2rem; }
+
+    /* ⭐ FIX: Constrain the Hype animation */
+    #urinechemicalexamresults_hype_container {
+      width: 100%;
+      height: 650px;          /* Adjust if needed */
+      position: relative;     /* REQUIRED */
+      overflow: hidden;       /* REQUIRED */
+      border-radius: 12px;
+      background: #fff;
+      margin-top: 1.5rem;
+    }
   </style>
 </head>
+
 <body>
 
 <header class="container">
@@ -62,7 +74,7 @@
     </p>
   </section>
 
-  <!-- LEARNING OBJECTIVES -->
+  <!-- OBJECTIVES -->
   <section class="card">
     <h2>Objectifs d’apprentissage</h2>
     <ul>
@@ -100,21 +112,20 @@
     <div id="urinechemicalexamresults_hype_container" class="HYPE_document"></div>
   </section>
 
-  <!-- PARAMETER INTERPRETATION -->
+  <!-- INTERPRETATION -->
   <section class="card">
     <h2>Interprétation des paramètres</h2>
-
     <ul>
-      <li><strong>Leucocytes :</strong> un résultat positif suggère une infection ou une inflammation.</li>
-      <li><strong>Nitrites :</strong> un résultat positif indique souvent une infection bactérienne (bactéries nitrifiantes).</li>
-      <li><strong>Protéines :</strong> la protéinurie peut refléter une atteinte glomérulaire ou une surcharge.</li>
-      <li><strong>Glucose :</strong> la glycosurie est typique d’un diabète mal contrôlé.</li>
-      <li><strong>Cétones :</strong> présentes lors de jeûne prolongé, vomissements, dénutrition ou diabète déséquilibré.</li>
-      <li><strong>Bilirubine :</strong> peut indiquer une atteinte hépatique ou biliaire.</li>
-      <li><strong>Urobilinogène :</strong> augmenté en cas d’hémolyse ou d’atteinte hépatique.</li>
+      <li><strong>Leucocytes :</strong> infection ou inflammation.</li>
+      <li><strong>Nitrites :</strong> infection bactérienne (bactéries nitrifiantes).</li>
+      <li><strong>Protéines :</strong> atteinte glomérulaire ou surcharge.</li>
+      <li><strong>Glucose :</strong> diabète mal contrôlé.</li>
+      <li><strong>Cétones :</strong> jeûne, vomissements, dénutrition, diabète déséquilibré.</li>
+      <li><strong>Bilirubine :</strong> atteinte hépatique ou biliaire.</li>
+      <li><strong>Urobilinogène :</strong> hémolyse ou atteinte hépatique.</li>
       <li><strong>Sang :</strong> hématurie, hémoglobinurie ou myoglobinurie.</li>
-      <li><strong>pH :</strong> varie selon l’alimentation, les infections et les troubles métaboliques.</li>
-      <li><strong>Densité :</strong> reflète l’hydratation et la capacité de concentration rénale.</li>
+      <li><strong>pH :</strong> alimentation, infection, troubles métaboliques.</li>
+      <li><strong>Densité :</strong> hydratation et capacité de concentration rénale.</li>
     </ul>
   </section>
 
@@ -143,7 +154,7 @@
 <script src="https://www.humanbiomedia.org/wp-content/uploads/siteground-optimizer-assets/siteground-optimizer-combined-js-0107d53d962e4cd481d3dd44e43df5c7.js"></script>
 <script src="https://www.humanbiomedia.org/wp-content/plugins/sg-cachepress/assets/js/lazysizes.min.js"></script>
 
-<!-- Simulation JS -->
+<!-- ⭐ HYPE SCRIPTS MUST BE LAST -->
 <script src="https://www.humanbiomedia.org/wp-content/uploads/hypeanimations/44/urine-chemical-exam-results.hyperesources/HYPE-740.thin.min.js"></script>
 <script src="https://www.humanbiomedia.org/wp-content/uploads/hypeanimations/44/urine-chemical-exam-results.hyperesources/urinechemicalexamresults_hype_generated_script.js?48744"></script>
 
