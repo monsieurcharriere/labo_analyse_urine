@@ -5,13 +5,12 @@
   <title>Examen macroscopique de l’urine</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <link rel="stylesheet" href="https://www.humanbiomedia.org/wp-content/themes/humanbiomedia/style.css">
-  <link rel="stylesheet" href="https://www.humanbiomedia.org/wp-content/uploads/siteground-optimizer-assets/siteground-optimizer-combined-css-8a536c831bda3ae1e8b9f5cde9c9f457.css">
-
   <style>
     body {
       font-family: system-ui, sans-serif;
       background: #fafafa;
+      margin: 0;
+      padding: 0;
       line-height: 1.6;
     }
 
@@ -21,7 +20,11 @@
       padding: 1.5rem;
     }
 
-    nav a { margin-right: 1rem; }
+    nav a {
+      margin-right: 1rem;
+      text-decoration: none;
+      color: #0077cc;
+    }
 
     .card {
       background: white;
@@ -42,14 +45,23 @@
 
     .img-row {
       display: flex;
+      flex-wrap: wrap;
       gap: 1rem;
       margin: 1rem 0;
     }
 
     .img-row img {
       width: 100%;
+      max-width: 160px;
       border-radius: 8px;
       object-fit: cover;
+    }
+
+    footer {
+      text-align: center;
+      font-size: 0.9rem;
+      color: #666;
+      margin-top: 2rem;
     }
   </style>
 </head>
@@ -82,7 +94,7 @@
     </p>
     <ul>
       <li>la <strong>couleur</strong> ;</li>
-      <li>la <strong>clarté</strong> (transparence) ;</li>
+      <li>la <strong>clarté</strong> ;</li>
       <li>l’<strong>odeur</strong> ;</li>
       <li>le <strong>volume urinaire</strong> sur 24 heures.</li>
     </ul>
@@ -100,7 +112,12 @@
     </p>
 
     <div class="img-row">
-      <img src="https://upload.wikimedia.org/wikipedia/commons/0/03/Urine_color_chart.png" alt="Nuancier de couleurs urinaires">
+      <img src="images/urine-color-pale-yellow.png" alt="Urine jaune pâle">
+      <img src="images/urine-color-amber.png" alt="Urine ambrée">
+      <img src="images/urine-color-orange.png" alt="Urine orange">
+      <img src="images/urine-color-pink.png" alt="Urine rosée">
+      <img src="images/urine-color-brown.png" alt="Urine brune">
+      <img src="images/urine-color-blue.png" alt="Urine bleue">
     </div>
 
     <h3>Interprétation clinique</h3>
@@ -127,7 +144,8 @@
     </p>
 
     <div class="img-row">
-      <img src="https://upload.wikimedia.org/wikipedia/commons/4/4c/Urine_turbidity.jpg" alt="Urine claire et trouble">
+      <img src="images/urine-clarity-clear.png" alt="Urine claire">
+      <img src="images/urine-clarity-cloudy.png" alt="Urine trouble">
     </div>
 
     <h3>Causes possibles de turbidité</h3>
@@ -151,6 +169,13 @@
       orienter vers certaines conditions métaboliques ou infectieuses.
     </p>
 
+    <div class="img-row">
+      <img src="images/urine-odor-normal.png" alt="Odeur normale">
+      <img src="images/urine-odor-ammonia.png" alt="Odeur ammoniacale">
+      <img src="images/urine-odor-foul.png" alt="Odeur fétide">
+      <img src="images/urine-odor-sweet.png" alt="Odeur sucrée">
+    </div>
+
     <h3>Interprétation clinique</h3>
     <ul>
       <li><strong>Odeur sucrée</strong> : cétonurie, diabète non contrôlé.</li>
@@ -172,6 +197,10 @@
       certains déséquilibres hormonaux. La valeur normale se situe entre
       <strong>800 et 2000 mL/24 h</strong>.
     </p>
+
+    <div class="img-row">
+      <img src="images/24-hr-urine-volume.png" alt="Volume urinaire sur 24 heures">
+    </div>
 
     <h3>Interprétation clinique</h3>
     <ul>
