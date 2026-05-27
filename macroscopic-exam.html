@@ -7,12 +7,19 @@
 
   <!-- Global CSS -->
   <link rel="stylesheet" href="https://www.humanbiomedia.org/wp-content/themes/humanbiomedia/style.css">
-  <link rel="stylesheet" href="https://www.humanbiomedia.org/wp-content/uploads/siteground-optimizer-assets/siteground-optimizer-combined-css-1cf6f60dcd5f60dd6d30de14883294d6.css">
+  <link rel="stylesheet" href="https://www.humanbiomedia.org/wp-content/uploads/siteground-optimizer-assets/siteground-optimizer-combined-css-8a536c831bda3ae1e8b9f5cde9c9f457.css">
 
   <style>
-    body { font-family: system-ui, sans-serif; line-height: 1.6; }
+    body { font-family: system-ui, sans-serif; line-height: 1.6; background: #fafafa; }
     .container { max-width: 1000px; margin: 0 auto; padding: 1.5rem; }
     nav a { margin-right: 1rem; }
+    .card {
+      background: white;
+      padding: 1.5rem;
+      border-radius: 12px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+      margin-bottom: 2rem;
+    }
     .hype-block { margin: 2rem 0; }
   </style>
 </head>
@@ -31,7 +38,7 @@
 
 <main class="container">
 
-  <section>
+  <section class="card">
     <h2>Contexte</h2>
     <p>
       L’examen macroscopique consiste à observer l’urine à l’œil nu. On évalue la couleur,
@@ -41,55 +48,43 @@
     </p>
   </section>
 
-  <!-- ========================= -->
-  <!-- 1. URINE COLOR ANIMATION -->
-  <!-- ========================= -->
-  <section class="hype-block">
+  <!-- COLOR -->
+  <section class="card hype-block">
     <h2>Couleur de l’urine</h2>
     <p>
       La couleur de l’urine varie selon l’hydratation, l’alimentation, les médicaments et
       certaines pathologies. Explorez les différentes teintes ci‑dessous.
     </p>
-
     <div id="urinecolorresults_hype_container" class="HYPE_document"></div>
   </section>
 
-  <!-- ========================== -->
-  <!-- 2. URINE CLARITY ANIMATION -->
-  <!-- ========================== -->
-  <section class="hype-block">
+  <!-- CLARITY -->
+  <section class="card hype-block">
     <h2>Clarté de l’urine</h2>
     <p>
       Une urine trouble peut indiquer la présence de leucocytes, de bactéries, de cristaux
       ou de mucus. Une urine limpide est généralement normale.
     </p>
-
     <div id="urineclarityresults_hype_container" class="HYPE_document"></div>
   </section>
 
-  <!-- ======================== -->
-  <!-- 3. URINE ODOR ANIMATION -->
-  <!-- ======================== -->
-  <section class="hype-block">
+  <!-- ODOR -->
+  <section class="card hype-block">
     <h2>Odeur de l’urine</h2>
     <p>
       Certaines odeurs peuvent être évocatrices : sucrée (diabète), fétide (infection),
       ammoniacale (stagnation), etc.
     </p>
-
     <div id="urineodorresults_hype_container" class="HYPE_document"></div>
   </section>
 
-  <!-- =============================== -->
-  <!-- 4. 24-HOUR VOLUME ANIMATION     -->
-  <!-- =============================== -->
-  <section class="hype-block">
+  <!-- 24-HOUR VOLUME -->
+  <section class="card hype-block">
     <h2>Volume urinaire sur 24 heures</h2>
     <p>
       Le volume urinaire quotidien reflète l’hydratation, la fonction rénale et certains
       déséquilibres hormonaux. Explorez les volumes typiques et anormaux ci‑dessous.
     </p>
-
     <div id="24hrurinevolume_hype_container" class="HYPE_document"></div>
   </section>
 
@@ -107,19 +102,14 @@
 <script src="https://www.humanbiomedia.org/wp-content/uploads/siteground-optimizer-assets/siteground-optimizer-combined-js-0107d53d962e4cd481d3dd44e43df5c7.js"></script>
 <script src="https://www.humanbiomedia.org/wp-content/plugins/sg-cachepress/assets/js/lazysizes.min.js"></script>
 
-<!-- Hype runtimes + generated scripts for all 4 macroscopic animations -->
-
-<!-- 24-hour urine volume -->
+<!-- Hype runtimes + scripts -->
 <script src="https://www.humanbiomedia.org/wp-content/uploads/hypeanimations/61/24hr-urine-volume.hyperesources/HYPE-740.thin.min.js"></script>
 <script src="https://www.humanbiomedia.org/wp-content/uploads/hypeanimations/61/24hr-urine-volume.hyperesources/24hrurinevolume_hype_generated_script.js?61014"></script>
 
-<!-- Urine color -->
 <script src="https://www.humanbiomedia.org/wp-content/uploads/hypeanimations/40/urine-color-results.hyperesources/urinecolorresults_hype_generated_script.js?30784"></script>
 
-<!-- Urine clarity -->
 <script src="https://www.humanbiomedia.org/wp-content/uploads/hypeanimations/50/urine-clarity-results.hyperesources/urineclarityresults_hype_generated_script.js?5014"></script>
 
-<!-- Urine odor -->
 <script src="https://www.humanbiomedia.org/wp-content/uploads/hypeanimations/41/urine-odor-results.hyperesources/urineodorresults_hype_generated_script.js?79004"></script>
 
 </body>
