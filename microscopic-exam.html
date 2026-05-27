@@ -2,18 +2,16 @@
 <html lang="fr">
 <head>
   <meta charset="UTF-8">
-  <title>Examen microscopique de l’urine</title>
+  <title>Examen macroscopique de l’urine</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <!-- Global CSS -->
-  <link rel="stylesheet" href="https://www.humanbiomedia.org/wp-content/themes/humanbiomedia/style.css">
-  <link rel="stylesheet" href="https://www.humanbiomedia.org/wp-content/uploads/siteground-optimizer-assets/siteground-optimizer-combined-css-8a536c831bda3ae1e8b9f5cde9c9f457.css">
 
   <style>
     body {
       font-family: system-ui, sans-serif;
-      line-height: 1.6;
       background: #fafafa;
+      margin: 0;
+      padding: 0;
+      line-height: 1.6;
     }
 
     .container {
@@ -24,6 +22,8 @@
 
     nav a {
       margin-right: 1rem;
+      text-decoration: none;
+      color: #0077cc;
     }
 
     .card {
@@ -34,15 +34,32 @@
       margin-bottom: 2rem;
     }
 
-    /* ⭐ FIX: Constrain the Hype animation */
-    #urinemicroscopicexam_hype_container {
+    iframe.sim {
       width: 100%;
-      height: 650px;        /* Adjust if needed */
-      position: relative;   /* REQUIRED */
-      overflow: hidden;     /* REQUIRED */
+      height: 700px;
+      border: none;
       border-radius: 12px;
+      overflow: hidden;
       background: #fff;
-      margin-top: 1.5rem;
+    }
+
+    .img-row {
+      display: flex;
+      gap: 1rem;
+      margin: 1rem 0;
+    }
+
+    .img-row img {
+      width: 100%;
+      border-radius: 8px;
+      object-fit: cover;
+    }
+
+    footer {
+      text-align: center;
+      font-size: 0.9rem;
+      color: #666;
+      margin-top: 2rem;
     }
   </style>
 </head>
@@ -50,7 +67,7 @@
 <body>
 
 <header class="container">
-  <h1>Examen microscopique de l’urine</h1>
+  <h1>Examen macroscopique de l’urine</h1>
   <nav>
     <a href="index.html">Accueil</a>
     <a href="urine-test-strip.html">Examen chimique</a>
@@ -62,57 +79,141 @@
 
 <main class="container">
 
-  <!-- INTRO -->
+  <!-- INTRODUCTION -->
   <section class="card">
     <h2>Introduction</h2>
     <p>
-      L’examen microscopique porte sur le sédiment urinaire. Après centrifugation,
-      une petite quantité de sédiment est déposée sur une lame et observée au
-      microscope. On recherche la présence de cellules, de cylindres, de cristaux,
-      de bactéries ou de levures.
+      L’examen macroscopique consiste à observer l’urine à l’œil nu avant toute analyse
+      chimique ou microscopique. Il fournit des indices rapides sur l’hydratation, la
+      fonction rénale, la présence de pigments, de cristaux, de sang ou d’une infection.
     </p>
-  </section>
-
-  <!-- SIMULATION -->
-  <section class="card">
-    <h2>Simulation microscopique</h2>
     <p>
-      Explorez différents champs microscopiques représentatifs de situations cliniques
-      variées. Identifiez les éléments présents et reliez‑les au contexte clinique.
+      Les quatre paramètres principaux sont :
     </p>
-
-    <div id="urinemicroscopicexam_hype_container" class="HYPE_document"></div>
+    <ul>
+      <li>la <strong>couleur</strong> ;</li>
+      <li>la <strong>clarté</strong> ;</li>
+      <li>l’<strong>odeur</strong> ;</li>
+      <li>le <strong>volume urinaire</strong> sur 24 heures.</li>
+    </ul>
   </section>
 
-  <!-- COMMON FINDINGS -->
+  <!-- COULEUR -->
   <section class="card">
-    <h2>Éléments fréquemment observés</h2>
+    <h2>Couleur de l’urine</h2>
+
+    <p>
+      La couleur normale de l’urine varie du jaune pâle au jaune ambré. Elle dépend
+      principalement de la concentration en <strong>urochrome</strong>, un pigment dérivé du
+      métabolisme de l’hémoglobine. Une urine très claire indique souvent une hydratation
+      abondante, tandis qu’une urine foncée reflète une concentration élevée.
+    </p>
+
+    <div class="img-row">
+      <img src="images/color.png" alt="Couleur de l’urine">
+      <img src="images/urine_color_chart.png" alt="Nuancier de couleurs urinaires">
+    </div>
+
+    <h3>Interprétation clinique</h3>
     <ul>
-      <li><strong>Érythrocytes :</strong> hématurie glomérulaire ou post‑glomérulaire.</li>
-      <li><strong>Leucocytes :</strong> infection ou inflammation des voies urinaires.</li>
-      <li><strong>Cylindres :</strong> hyalins, granuleux, érythrocytaires, leucocytaires, cireux.</li>
-      <li><strong>Crystaux :</strong> oxalate de calcium, acide urique, phosphate ammoniaco‑magnésien.</li>
-      <li><strong>Bactéries / levures :</strong> infection ou contamination.</li>
+      <li><strong>Jaune très pâle</strong> : hydratation élevée.</li>
+      <li><strong>Jaune foncé</strong> : déshydratation.</li>
+      <li><strong>Orange</strong> : carotènes, rifampicine, déshydratation sévère.</li>
+      <li><strong>Rouge</strong> : hématurie, betteraves, myoglobine.</li>
+      <li><strong>Brun</strong> : bilirubine, myoglobine, certains médicaments.</li>
+      <li><strong>Vert / bleu</strong> : infections à Pseudomonas, colorants.</li>
     </ul>
+
+    <h3>Simulation interactive</h3>
+    <iframe class="sim" src="macroscopic-color.html"></iframe>
+  </section>
+
+  <!-- CLARTÉ -->
+  <section class="card">
+    <h2>Clarté de l’urine</h2>
+
+    <p>
+      Une urine normale est généralement <strong>claire</strong> ou légèrement trouble. La turbidité
+      peut être causée par des cellules, des bactéries, des cristaux ou du mucus.
+    </p>
+
+    <div class="img-row">
+      <img src="images/clarity.png" alt="Clarté de l’urine">
+      <img src="images/urine_clarity_examples.png" alt="Exemples d’urine claire et trouble">
+    </div>
+
+    <h3>Causes possibles de turbidité</h3>
+    <ul>
+      <li><strong>Leucocytes</strong> : infection urinaire.</li>
+      <li><strong>Bactéries</strong> : cystite, pyélonéphrite.</li>
+      <li><strong>Cristaux</strong> : oxalates, phosphates.</li>
+      <li><strong>Protéines</strong> : protéinurie importante.</li>
+    </ul>
+
+    <h3>Simulation interactive</h3>
+    <iframe class="sim" src="macroscopic-clarity.html"></iframe>
+  </section>
+
+  <!-- ODEUR -->
+  <section class="card">
+    <h2>Odeur de l’urine</h2>
+
+    <p>
+      L’urine fraîche a une odeur légère et caractéristique. Une odeur anormale peut
+      orienter vers certaines conditions métaboliques ou infectieuses.
+    </p>
+
+    <div class="img-row">
+      <img src="images/odor.png" alt="Odeur de l’urine">
+      <img src="images/urine_odor_examples.png" alt="Exemples d’odeurs urinaires">
+    </div>
+
+    <h3>Interprétation clinique</h3>
+    <ul>
+      <li><strong>Odeur sucrée</strong> : cétonurie, diabète non contrôlé.</li>
+      <li><strong>Odeur fétide</strong> : infection bactérienne.</li>
+      <li><strong>Odeur d’ammoniac</strong> : urine stagnante, déshydratation.</li>
+      <li><strong>Odeur de sirop d’érable</strong> : maladie du sirop d’érable (MSUD).</li>
+    </ul>
+
+    <h3>Simulation interactive</h3>
+    <iframe class="sim" src="macroscopic-odor.html"></iframe>
+  </section>
+
+  <!-- VOLUME -->
+  <section class="card">
+    <h2>Volume urinaire sur 24 heures</h2>
+
+    <p>
+      Le volume urinaire quotidien reflète l’équilibre hydrique, la fonction rénale et
+      certains déséquilibres hormonaux. La valeur normale se situe entre
+      <strong>800 et 2000 mL/24 h</strong>.
+    </p>
+
+    <div class="img-row">
+      <img src="images/volume.png" alt="Volume urinaire">
+      <img src="images/urine_volume_diagram.png" alt="Diagramme du volume urinaire">
+    </div>
+
+    <h3>Interprétation clinique</h3>
+    <ul>
+      <li><strong>Oligurie (&lt; 400 mL)</strong> : déshydratation, insuffisance rénale aiguë.</li>
+      <li><strong>Anurie (&lt; 100 mL)</strong> : obstruction, insuffisance rénale sévère.</li>
+      <li><strong>Polyurie (&gt; 2500 mL)</strong> : diabète, diurèse osmotique, polydipsie.</li>
+    </ul>
+
+    <h3>Simulation interactive</h3>
+    <iframe class="sim" src="macroscopic-volume.html"></iframe>
   </section>
 
 </main>
 
 <footer class="container">
   <p>
-    Basé sur les ressources de HumanBioMedia – Attribution :
-    « Access it for free at https://humanbiomedia.org ».
+    Contenu pédagogique recréé et adapté en français.  
+    Simulations © HumanBioMedia — Licence Creative Commons BY‑NC‑SA.
   </p>
 </footer>
-
-<!-- Global JS -->
-<script src="https://www.humanbiomedia.org/wp-includes/js/jquery/jquery.min.js"></script>
-<script src="https://www.humanbiomedia.org/wp-content/uploads/siteground-optimizer-assets/siteground-optimizer-combined-js-0107d53d962e4cd481d3dd44e43df5c7.js"></script>
-<script src="https://www.humanbiomedia.org/wp-content/plugins/sg-cachepress/assets/js/lazysizes.min.js"></script>
-
-<!-- ⭐ HYPE SCRIPTS MUST BE LAST -->
-<script src="https://www.humanbiomedia.org/wp-content/uploads/hypeanimations/36/urine-microscopic-exam.hyperesources/HYPE-740.full.min.js"></script>
-<script src="https://www.humanbiomedia.org/wp-content/uploads/hypeanimations/36/urine-microscopic-exam.hyperesources/urinemicroscopicexam_hype_generated_script.js?77323"></script>
 
 </body>
 </html>
