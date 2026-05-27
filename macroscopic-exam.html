@@ -33,11 +33,23 @@
 
     iframe.sim {
       width: 100%;
-      height: 700px; /* ⭐ Your chosen height */
+      height: 700px;
       border: none;
       border-radius: 12px;
       overflow: hidden;
       background: #fff;
+    }
+
+    .img-row {
+      display: flex;
+      gap: 1rem;
+      margin: 1rem 0;
+    }
+
+    .img-row img {
+      width: 100%;
+      border-radius: 8px;
+      object-fit: cover;
     }
   </style>
 </head>
@@ -57,45 +69,104 @@
 
 <main class="container">
 
+  <!-- INTRODUCTION -->
   <section class="card">
     <h2>Introduction</h2>
     <p>
-      L’examen macroscopique consiste à observer l’urine à l’œil nu. On évalue la couleur,
-      la clarté, l’odeur et parfois le volume. Ces caractéristiques fournissent des indices
-      rapides sur l’état d’hydratation, la présence possible de sang, de pigments biliaires,
-      de cristaux ou d’une infection.
+      L’examen macroscopique consiste à observer l’urine à l’œil nu avant toute analyse
+      chimique ou microscopique. Il fournit des indices rapides sur l’hydratation, la
+      fonction rénale, la présence de pigments, de cristaux, de sang ou d’une infection.
     </p>
+    <p>
+      Les quatre paramètres principaux sont :
+    </p>
+    <ul>
+      <li>la <strong>couleur</strong> ;</li>
+      <li>la <strong>clarté</strong> (transparence) ;</li>
+      <li>l’<strong>odeur</strong> ;</li>
+      <li>le <strong>volume urinaire</strong> sur 24 heures.</li>
+    </ul>
   </section>
 
+  <!-- COULEUR -->
   <section class="card">
     <h2>Couleur de l’urine</h2>
-    <p>Explorez les différentes teintes ci‑dessous.</p>
+
+    <p>
+      La couleur normale de l’urine varie du jaune pâle au jaune ambré. Elle dépend
+      principalement de la concentration en <strong>urochrome</strong>, un pigment dérivé du
+      métabolisme de l’hémoglobine. Une urine très claire indique souvent une hydratation
+      abondante, tandis qu’une urine foncée reflète une concentration élevée.
+    </p>
+
+    <div class="img-row">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/0/03/Urine_color_chart.png" alt="Nuancier de couleurs urinaires">
+    </div>
+
+    <h3>Interprétation clinique</h3>
+    <ul>
+      <li><strong>Jaune très pâle</strong> : hydratation élevée.</li>
+      <li><strong>Jaune foncé</strong> : déshydratation.</li>
+      <li><strong>Orange</strong> : carotènes, rifampicine, déshydratation sévère.</li>
+      <li><strong>Rouge</strong> : hématurie, betteraves, myoglobine.</li>
+      <li><strong>Brun</strong> : bilirubine, myoglobine, certains médicaments.</li>
+      <li><strong>Vert / bleu</strong> : infections à Pseudomonas, colorants.</li>
+    </ul>
+
+    <h3>Simulation interactive</h3>
     <iframe class="sim" src="macroscopic-color.html"></iframe>
   </section>
 
+  <!-- CLARTÉ -->
   <section class="card">
     <h2>Clarté de l’urine</h2>
-    <p>Une urine trouble peut indiquer la présence de leucocytes, de bactéries ou de cristaux.</p>
+
+    <p>
+      Une urine normale est généralement <strong>claire</strong> ou légèrement trouble. La turbidité
+      peut être causée par des cellules, des bactéries, des cristaux ou du mucus.
+    </p>
+
+    <div class="img-row">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/4/4c/Urine_turbidity.jpg" alt="Urine claire et trouble">
+    </div>
+
+    <h3>Causes possibles de turbidité</h3>
+    <ul>
+      <li><strong>Leucocytes</strong> : infection urinaire.</li>
+      <li><strong>Bactéries</strong> : cystite, pyélonéphrite.</li>
+      <li><strong>Cristaux</strong> : oxalates, phosphates.</li>
+      <li><strong>Protéines</strong> : protéinurie importante.</li>
+    </ul>
+
+    <h3>Simulation interactive</h3>
     <iframe class="sim" src="macroscopic-clarity.html"></iframe>
   </section>
 
+  <!-- ODEUR -->
   <section class="card">
     <h2>Odeur de l’urine</h2>
-    <p>Certaines odeurs peuvent être évocatrices : sucrée, fétide, ammoniacale…</p>
+
+    <p>
+      L’urine fraîche a une odeur légère et caractéristique. Une odeur anormale peut
+      orienter vers certaines conditions métaboliques ou infectieuses.
+    </p>
+
+    <h3>Interprétation clinique</h3>
+    <ul>
+      <li><strong>Odeur sucrée</strong> : cétonurie, diabète non contrôlé.</li>
+      <li><strong>Odeur fétide</strong> : infection bactérienne.</li>
+      <li><strong>Odeur d’ammoniac</strong> : urine stagnante, déshydratation.</li>
+      <li><strong>Odeur de sirop d’érable</strong> : maladie du sirop d’érable (MSUD).</li>
+    </ul>
+
+    <h3>Simulation interactive</h3>
     <iframe class="sim" src="macroscopic-odor.html"></iframe>
   </section>
 
+  <!-- VOLUME -->
   <section class="card">
     <h2>Volume urinaire sur 24 heures</h2>
-    <p>Explorez les volumes typiques et anormaux ci‑dessous.</p>
-    <iframe class="sim" src="macroscopic-volume.html"></iframe>
-  </section>
 
-</main>
-
-<footer class="container">
-  <p>Basé sur les ressources de HumanBioMedia — « Access it for free at https://humanbiomedia.org ».</p>
-</footer>
-
-</body>
-</html>
+    <p>
+      Le volume urinaire quotidien reflète l’équilibre hydrique, la fonction rénale et
+      certains déséquilibres hormonaux. La valeur normale
