@@ -1,147 +1,44 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Simulation de bandelette urinaire – Analyse d'urine</title>
-
-    <!-- Original site CSS (keeps animations + layout) -->
-    <link rel="stylesheet" href="https://www.humanbiomedia.org/wp-content/themes/humanbiomedia/style.css">
-
-    <style>
-        /* Optional: small overrides for French text spacing */
-        body {
-            font-family: system-ui, sans-serif;
-            line-height: 1.6;
-        }
-        .section {
-            max-width: 900px;
-            margin: auto;
-            padding: 2rem 1rem;
-        }
-        h1, h2, h3 {
-            font-weight: 700;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <title>Analyse d’urine – Simulations</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Optional: reuse their main CSS for look & feel -->
+  <link rel="stylesheet" href="https://www.humanbiomedia.org/wp-content/themes/humanbiomedia/style.css">
+  <style>
+    body { font-family: system-ui, sans-serif; line-height: 1.6; }
+    .container { max-width: 1000px; margin: 0 auto; padding: 1.5rem; }
+    nav a { margin-right: 1rem; }
+  </style>
 </head>
-
 <body>
+  <header class="container">
+    <h1>Analyse d’urine – Simulations de laboratoire</h1>
+    <nav>
+      <a href="index.html">Accueil</a>
+      <a href="urine-test-strip.html">Examen chimique</a>
+      <a href="macroscopic-exam.html">Examen macroscopique</a>
+      <a href="microscopic-exam.html">Examen microscopique</a>
+      <a href="lab-assessment.html">Évaluation de laboratoire</a>
+    </nav>
+  </header>
 
-<header class="section">
-    <h1>Simulation de laboratoire d’analyse d’urine</h1>
-    <p>Adaptation française – basé sur HumanBioMedia (CC‑BY 4.0)</p>
-</header>
-
-<section class="section">
-    <h2>Qu’est‑ce que l’analyse d’urine</h2>
+  <main class="container">
+    <h2>À propos de ces simulations</h2>
     <p>
-        L’analyse d’urine est l’évaluation chimique, physique et microscopique de l’urine.
-        Dans cet exercice simulé, vous commencerez par examiner chimiquement l’urine d’un sujet
-        à l’aide de pastilles réactives fixées sur une bandelette. Ensuite, vous évaluerez
-        l’aspect macroscopique de l’urine, puis vous observerez ses composants au microscope.
-        Vous conclurez en posant un diagnostic basé sur les antécédents du sujet et vos résultats.
+      Cette série de pages propose une version française des simulations d’analyse d’urine
+      développées par HumanBioMedia (licence Creative Commons Attribution 4.0).
+      Les animations et simulations originales sont intégrées telles quelles, tandis que
+      les explications et la navigation sont fournies en français.
     </p>
-</section>
+  </main>
 
-<section class="section">
-    <h2>Antécédents personnels et médicaux du sujet</h2>
+  <footer class="container">
     <p>
-        Votre sujet a 40 ans et travaille comme consultante à domicile. Elle passe la majorité
-        de ses journées assise devant un ordinateur. Après être passée à un poste de gestion,
-        sa charge de travail a augmenté et elle a pris 50 livres au cours des deux dernières années.
-        Elle rapporte uriner fréquemment, avoir souvent faim, soif et se sentir fatiguée.
-        Elle se présente pour un examen physique.
+      Basé sur les ressources de HumanBioMedia – Attribution requise :
+      « Access it for free at https://humanbiomedia.org ».
     </p>
-</section>
-
-<section class="section">
-    <h2>Examen chimique – Introduction</h2>
-    <p>
-        L’examen chimique de l’urine permet de déterminer le pH et les niveaux de plusieurs
-        composés cliniquement significatifs.
-    </p>
-</section>
-
-<section class="section">
-    <h2>Bandelette urinaire</h2>
-    <p>
-        L’examen utilise des bandelettes de test contenant des pastilles réactives qui changent
-        de couleur après immersion dans l’urine. Une seule bandelette permet de tester les
-        leucocytes, nitrites, urobilinogène, protéines, pH, sang, densité, cétones, bilirubine
-        et glucose.
-    </p>
-</section>
-
-<section class="section">
-    <h2>Tableau de couleurs diagnostiques</h2>
-    <p>
-        Après immersion, la bandelette est comparée au tableau de couleurs imprimé sur le flacon.
-        Les changements de couleur indiquent de possibles anomalies.
-    </p>
-</section>
-
-<section class="section">
-    <h2>Simulation interactive</h2>
-    <p>La simulation originale est intégrée ci‑dessous pour conserver les animations.</p>
-
-    <!-- EMBED THE ORIGINAL SIMULATION -->
-    <iframe 
-        src="https://www.humanbiomedia.org/urine-test-strip-simulation/"
-        width="100%" 
-        height="900" 
-        style="border: none;">
-    </iframe>
-</section>
-
-<section class="section">
-    <h2>Tests chimiques et indications</h2>
-
-    <h3>Leucocytes</h3>
-    <p>Un taux élevé indique une infection urinaire.</p>
-
-    <h3>Nitrites</h3>
-    <p>Un résultat positif indique une infection bactérienne.</p>
-
-    <h3>Urobilinogène</h3>
-    <p>Des niveaux élevés indiquent un dysfonctionnement hépatique.</p>
-
-    <h3>Protéines</h3>
-    <p>La protéinurie indique une maladie rénale ou un trouble immunitaire.</p>
-
-    <h3>pH</h3>
-    <p>Une urine trop acide ou alcaline peut favoriser la formation de calculs.</p>
-
-    <h3>Sang</h3>
-    <p>Indique une lésion rénale, une infection, des calculs ou un cancer.</p>
-
-    <h3>Densité</h3>
-    <p>Indique le niveau d’hydratation.</p>
-
-    <h3>Cétones</h3>
-    <p>Indiquent généralement un diabète non contrôlé.</p>
-
-    <h3>Bilirubine</h3>
-    <p>Indique une maladie du foie ou une obstruction biliaire.</p>
-
-    <h3>Glucose</h3>
-    <p>Indique un diabète lorsque la glycémie dépasse le seuil rénal.</p>
-</section>
-
-<section class="section">
-    <h2>Procédure de l’examen chimique</h2>
-    <p>
-        Immerger la bandelette dans l’urine, la retirer, la maintenir à l’horizontale et attendre
-        2 minutes avant de comparer les couleurs au tableau diagnostique.
-    </p>
-</section>
-
-<footer class="section">
-    <h2>Conditions d’utilisation</h2>
-    <p>
-        Ce contenu est une adaptation française basée sur HumanBioMedia (CC‑BY 4.0).  
-        Attribution requise : « Access it for free at https://humanbiomedia.org ».
-    </p>
-</footer>
-
+  </footer>
 </body>
 </html>
